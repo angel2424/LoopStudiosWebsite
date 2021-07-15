@@ -12,7 +12,7 @@ body {
 /* ------- HEADER ------- */
 
 header {
-    height: 98vh;
+    min-height: 98vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.5)),url(images/desktop/image-hero.jpg);
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@ header {
     font-weight: 300;
     text-transform: uppercase;
     word-spacing: 6px;
-    font-size: 6.5rem;
+    font-size: clamp(2.5rem , 5vw, 6.5rem);
     color: #fff;
     margin: 60px 20px;
     padding: 30px 30px;
@@ -113,6 +113,9 @@ header {
     font-weight: 300;
     font-size: 4.5rem;
     text-transform: uppercase;
+}
+.oc-phone-button {
+    display: none;
 }
 .oc-title-button button {
     width: 185px;
@@ -251,14 +254,11 @@ footer {
 
 
 /* ------- MEDIA QUERIES ------ */
-@media (min-width: 375px) {
+@media screen and (max-width: 400px){
     header {
         background-image: url(images/mobile/image-hero.jpg);
         padding: 5px;
-        height: 95.5vh;
-    }
-    .navbar {
-        padding: 40px 20px;
+        overflow: hidden;
     }
     .nav-logo img{
         height: 25px;
@@ -267,32 +267,48 @@ footer {
         display: none;
     }
     .header-title{
-        width: auto;
+        min-width: 65vw;
+        height: auto;
         font-size: 3.8rem;
-        height: 20%;
-        margin-top: 115px;
     }
+
+    /*----- HOME ABOUT SECTION -----*/
+
     .home-about {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        padding: 10px;
+        overflow: hidden;
+        padding: 90px 10px;
     }
     .home-about img{
         content: url("images/mobile/image-interactive.jpg");
-        width: 95vw;
+        width: 88vw;
     }
     .home-about-title-caption {
-        display: contents;
-        padding: 0;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+        width: 85vw;
     }
     .home-about-title-caption h3{
-        font-size: 1.8rem;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 0;
+
     }
     .home-about-title-caption p{
-        width: 80%;
         text-align: center;
+        line-height: 25px;
+        width: 75vw;
+        color: hsl(0, 0%, 55%);
     }
+
+    /* ----- OUR CREATIONS SECTION ----- */
+
     .our-creations {
         display: grid;
         padding: 0px 10px; 
