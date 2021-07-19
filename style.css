@@ -62,13 +62,13 @@ header {
     font-weight: 300;
     text-transform: uppercase;
     word-spacing: 6px;
-    font-size: clamp(2.5rem , 5vw, 6.5rem);
+    font-size: clamp(2.0rem , 5vw, 5.5rem);
     color: #fff;
-    margin: 60px 20px;
+    margin: 30px 20px;
     padding: 30px 30px;
     border: 2px solid #fff;
-    width: 50%;
-    height: 35%;
+    max-width: 50%;
+    height: 20vw;
 }
 
 /*----- HOME ABOUT SECTION -----*/
@@ -175,6 +175,30 @@ header {
     width: 50%;
     transition: 0.3s;
 }
+.deep-earth-mobile {
+    display: none;
+}
+.night-arcade-mobile {
+    display: none;
+}
+.soccer-team-mobile {
+    display: none;
+}
+.the-grid-mobile {
+    display: none;
+}
+.from-above-mobile {
+    display: none;
+}
+.pocket-borealis-mobile {
+    display: none;
+}
+.the-curiosity-mobile {
+    display: none;
+}
+.fisheye-mobile {
+    display: none;
+}
 
 /* ----- FOOTER ----- */
 
@@ -258,8 +282,7 @@ footer {
     header {
         background-image: url(images/mobile/image-hero.jpg);
         padding: 5px;
-        overflow: hidden;
-        
+        position: relative;
     }
     .nav-logo img{
         height: 25px;
@@ -268,9 +291,11 @@ footer {
         display: none;
     }
     .header-title{
-        min-width: 65vw;
+        min-width: 70vw;
         height: auto;
         font-size: 3.8rem;
+        position: absolute;
+        bottom: 30%;
     }
 
     /*----- HOME ABOUT SECTION -----*/
@@ -280,7 +305,7 @@ footer {
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        padding: 90px 10px;
+        padding: 90px 10px 10px 10px;
     }
     .home-about img{
         content: url("images/mobile/image-interactive.jpg");
@@ -313,52 +338,113 @@ footer {
     .our-creations {
         display: grid;
         padding: 0px 10px; 
+        margin-bottom: 50px;
     }
     .oc-title-button {
         display: block;
     }
+    .oc-title-button h3 {
+        font-size: 3.5rem;
+        text-align: center;
+        margin: -15px;
+    }
     .oc-title-button button {
         display: none;
+    }
+    .oc-container {
+        padding-bottom: 10px;
+    }
+    .oc-container h4 {
+        font-size: 2.4rem;
+        width: 40%;
     }
     .oc-gallery {
         display: grid;
         grid-template-columns: 1fr;
     }
+    .deep-earth{
+        display: none;
+    }
+    .deep-earth-mobile {
+        display: block;
+        width: 330px;
+    }
+    .night-arcade{
+        display: none;
+    }
+    .night-arcade-mobile {
+        display: block;
+        width: 330px;
+    }
+    .soccer-team{
+        display: none;
+    }
+    .soccer-team-mobile {
+        display: block;
+        width: 330px;
+    }
+    .the-grid{
+        display: none;
+    }
+    .the-grid-mobile {
+        display: block;
+        width: 330px;
+    }
+    .from-above{
+        display: none;
+    }
+    .from-above-mobile {
+        display: block;
+        width: 330px;
+    }
+    .pocket-borealis{
+        display: none;
+    }
+    .pocket-borealis-mobile {
+        display: block;
+        width: 330px;
+    }
+    .the-curiosity{
+        display: none;
+    }
+    .the-curiosity-mobile {
+        display: block;
+        width: 330px;
+    }
+    .fisheye{
+        display: none;
+    }
+    .fisheye-mobile {
+        display: block;
+        width: 330px;
+    }
     .oc-container h4 {
         position: absolute;
         bottom: 1px;
     }
-    .deep-earth{
-        content: url("images/mobile/image-deep-earth.jpg");
-        width: 330px;
+    .oc-phone-button {
+        margin-top: 20px;
+        display: block;
+        width: 185px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
     }
-    .night-arcade{
-        content: url("images/mobile/image-night-arcade.jpg");
-        width: 330px;
+    .oc-phone-button a {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 3px;
+        color: #000;
     }
-    .soccer-team{
-        content: url("images/mobile/image-soccer-team.jpg");
-        width: 330px;
-    }
-    .the-grid{
-        content: url("images/mobile/image-grid.jpg");
-        width: 330px;
-    }
-    .from-above{
-        content: url("images/mobile/image-from-above.jpg");
-        width: 330px;
-    }
-    .pocket-borealis{
-        content: url("images/mobile/image-pocket-borealis.jpg");
-        width: 330px;
-    }
-    .the-curiosity{
-        content: url("images/mobile/image-curiosity.jpg");
-        width: 330px;
-    }
-    .fisheye{
-        content: url("images/mobile/image-fisheye.jpg");
-        width: 330px;
+
+    /* ----- FOOTER ----- */
+
+    footer {
+        display: flex;
+        flex-direction: column;
     }
     
 }
