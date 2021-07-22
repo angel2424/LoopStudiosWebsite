@@ -275,7 +275,9 @@ footer {
 .attribution {
     color: hsl(0, 0%, 55%);
 }
-
+.mobile-footer {
+    display: none;
+}
 
 /* ------- MEDIA QUERIES ------ */
 @media screen and (max-width: 400px){
@@ -344,7 +346,7 @@ footer {
         display: block;
     }
     .oc-title-button h3 {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
         text-align: center;
         margin: -15px;
     }
@@ -443,8 +445,35 @@ footer {
     /* ----- FOOTER ----- */
 
     footer {
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
-    
+    .mobile-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+        padding: 20px 15px;
+    }
+    .logo-sm-icons {
+        display: block;
+    }
+    .sm-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-menu li{
+        display: block;
+        padding: 5px 0;
+    }
+    .footer-menu{
+        text-align: center;
+        padding: 0 5px;
+    }
+    .arr {
+        color: hsl(0, 0%, 55%);
+    }
+    .attribution {
+        display: none;
+    }
 }
