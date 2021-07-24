@@ -21,16 +21,31 @@ header {
     padding: 0px 120px;
 }
 .navbar {
-    padding: 60px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+.nav-ul {
+    display: flex;
 }
 .nav-logo {
     cursor: pointer;
 }
 .main-nav ul {
     list-style-type: none;
+}
+.hamburger {
+    display: none;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+.hamburger:focus {
+    outline: none;
 }
 .main-nav li {
     display: inline-block;
@@ -280,6 +295,8 @@ footer {
 }
 
 /* ------- MEDIA QUERIES ------ */
+
+    /* ------- PHONE ------ */
 @media screen and (max-width: 400px){
     header {
         background-image: url(images/mobile/image-hero.jpg);
@@ -289,9 +306,7 @@ footer {
     .nav-logo img{
         height: 25px;
     }
-    .main-nav {
-        display: none;
-    }
+
     .header-title{
         min-width: 70vw;
         height: auto;
@@ -320,6 +335,7 @@ footer {
         align-items: center;
         margin: 0;
         padding: 10px;
+        margin-top: 10px;
         width: 85vw;
     }
     .home-about-title-caption h3{
@@ -331,6 +347,7 @@ footer {
     .home-about-title-caption p{
         text-align: center;
         line-height: 25px;
+        padding-top: 10px;
         width: 75vw;
         color: hsl(0, 0%, 55%);
     }
@@ -475,5 +492,356 @@ footer {
     }
     .attribution {
         display: none;
+    }
+}
+
+    /* ------- iPad/Tablet Portrait------ */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    header{
+        padding: 10px 60px;
+    }
+    .hero {
+        display: flex;
+        height: 60vh;
+        align-items: center;
+    }
+    .header-title {
+        font-size: 5rem;
+        min-width: 60vw;
+        height: 30vh;
+    }
+
+    /*----- HOME ABOUT SECTION -----*/
+
+    .home-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 110px;
+        padding: 10px
+    }
+    .home-about img{
+        content: url("images/mobile/image-interactive.jpg");
+        width: 88vw;
+    }
+    .home-about-title-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 0 0;
+        padding: 10px;
+        width: 85vw;
+    }
+    .home-about-title-caption h3{
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 0;
+
+    }
+    .home-about-title-caption p{
+        text-align: center;
+        line-height: 25px;
+        width: 75vw;
+        color: hsl(0, 0%, 55%);
+    }
+
+    /* ----- OUR CREATIONS SECTION ----- */
+    
+    .our-creations{
+        padding: 0 60px 60px 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    .oc-title-button {
+        width: 550px;
+        padding: 60px 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .oc-title-button h3{
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        text-align: center;
+        font-weight: 300;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+    }
+    .oc-title-button button{
+        display: none;
+    }
+    .oc-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .deep-earth{
+        display: none;
+    }
+    .deep-earth-mobile {
+        display: block;
+        width: 675px;
+    }
+    .night-arcade{
+        display: none;
+    }
+    .night-arcade-mobile {
+        display: block;
+        width: 675px;
+    }
+    .soccer-team{
+        display: none;
+    }
+    .soccer-team-mobile {
+        display: block;
+        width: 675px;
+    }
+    .the-grid{
+        display: none;
+    }
+    .the-grid-mobile {
+        display: block;
+        width: 675px;
+    }
+    .from-above{
+        display: none;
+    }
+    .from-above-mobile {
+        display: block;
+        width: 675px;
+    }
+    .pocket-borealis{
+        display: none;
+    }
+    .pocket-borealis-mobile {
+        display: block;
+        width: 675px;
+    }
+    .the-curiosity{
+        display: none;
+    }
+    .the-curiosity-mobile {
+        display: block;
+        width: 675px;
+    }
+    .fisheye{
+        display: none;
+    }
+    .fisheye-mobile {
+        display: block;
+        width: 675px;
+    }
+    .oc-phone-button {
+        margin-top: 50px;
+        display: block;
+        width: 185px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+    .oc-phone-button a {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 3px;
+        color: #000;
+    }
+
+    /* ----- FOOTER ----- */
+
+    footer {
+        display: none;
+    }
+    .mobile-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55vh;
+        padding: 20px 15px;
+    }
+    .logo-sm-icons {
+        display: block;
+    }
+    .sm-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-menu li{
+        display: block;
+        padding: 5px 0;
+    }
+    .footer-menu{
+        text-align: center;
+        padding: 0 5px;
+    }
+    .arr {
+        margin-top: 50px;
+        color: hsl(0, 0%, 55%);
+    }
+    .attribution {
+        display: none;
+    }
+}
+
+    /* ------- iPad/Tablet Portrait------ */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    header{
+        padding: 10px 60px;
+    }
+    .hero {
+        display: flex;
+        height: 60vh;
+        align-items: center;
+    }
+    .header-title {
+        font-size: 5rem;
+        min-width: 60vw;
+        height: 30vh;
+    }
+    .home-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 110px;
+        padding: 10px
+    }
+    .home-about img{
+        width: 80vw;
+    }
+    .home-about-title-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 0 0;
+        padding: 10px;
+        width: 85vw;
+    }
+    .home-about-title-caption h3{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 0;
+
+    }
+    .home-about-title-caption p{
+        text-align: center;
+        line-height: 25px;
+        width: 75vw;
+        color: hsl(0, 0%, 55%);
+    }
+
+    /* ----- OUR CREATIONS SECTION ----- */
+    
+    .our-creations{
+        padding: 0 60px 60px 60px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .oc-title-button {
+        width: 80vw;
+        padding: 60px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .oc-title-button h3{
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        text-align: center;
+        font-weight: 300;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+    }
+    .oc-title-button button{
+        width: 185px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+    .oc-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .deep-earth{
+        display: none;
+    }
+    .deep-earth-mobile {
+        display: block;
+        width: 400px;
+    }
+    .night-arcade{
+        display: none;
+    }
+    .night-arcade-mobile {
+        display: block;
+        width: 400px;
+    }
+    .soccer-team{
+        display: none;
+    }
+    .soccer-team-mobile {
+        display: block;
+        width: 400px;
+    }
+    .the-grid{
+        display: none;
+    }
+    .the-grid-mobile {
+        display: block;
+        width: 400px;
+    }
+    .from-above{
+        display: none;
+    }
+    .from-above-mobile {
+        display: block;
+        width: 400px;
+    }
+    .pocket-borealis{
+        display: none;
+    }
+    .pocket-borealis-mobile {
+        display: block;
+        width: 400px;
+    }
+    .the-curiosity{
+        display: none;
+    }
+    .the-curiosity-mobile {
+        display: block;
+        width: 400px;
+    }
+    .fisheye{
+        display: none;
+    }
+    .fisheye-mobile {
+        display: block;
+        width: 400px;
+    }
+    .oc-phone-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .nav-ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-ul.show {
+        display: block;
     }
 }
