@@ -1,6 +1,9 @@
-const hamburger = document.getElementById('hamburger');
-const navUl = document.getElementById('nav-ul');
+let menu = document.getElementById('main-nav-mobile');
 
-hamburger.addEventListener('click', () =>{
-    navUl.classList.toggle('show');
-});
+function closemenu() {
+    menu.style.top = '-100vh';
+}
+
+function openmenu() {
+    menu.style.top = '0';
+}

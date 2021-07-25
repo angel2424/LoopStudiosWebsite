@@ -19,24 +19,42 @@
 </head>
 <body>
   <header>
-    <div class="navbar" id="navbar">
+    <div class="navbar">
       <a class="nav-logo"><img src="images/logo.svg" alt="Loopstudios logo"></a>
       <nav class="main-nav" id="main-nav">
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-ul" id="nav-ul">
-          <li><a href="#" class="nav-about">About</a></li>
-          <li><a href="#" class="nav-careers">Careers</a></li>
-          <li><a href="#" class="nav-events">Events</a></li> 
-          <li><a href="#" class="nav-products">Products</a></li> 
-          <li><a href="#" class="nav-support">Support</a></li>
-        </ul>
+        <div class="menu">
+          <ul class="nav-ul" id="nav-ul">
+            <li><a href="#" class="nav-about">About</a></li>
+            <li><a href="#" class="nav-careers">Careers</a></li>
+            <li><a href="#" class="nav-events">Events</a></li> 
+            <li><a href="#" class="nav-products">Products</a></li> 
+            <li><a href="#" class="nav-support">Support</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar-mobile" id="navbar-mobile">
+      <a class="nav-logo"><img src="images/logo.svg" alt="Loopstudios logo"></a>
+      <button class="hamburger" onclick="openmenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav-mobile" id="main-nav-mobile">
+        <div class="menu">
+          <ul class="nav-ul-mobile" id="nav-ul-mobile">
+            <li><a href="#" class="nav-about">About</a></li>
+            <li><a href="#" class="nav-careers">Careers</a></li>
+            <li><a href="#" class="nav-events">Events</a></li> 
+            <li><a href="#" class="nav-products">Products</a></li> 
+            <li><a href="#" class="nav-support">Support</a></li>
+          </ul>
+          <img class="close-icon" src="images/close.svg" alt="" onclick="closemenu()">
+        </div>
       </nav>
     </div>
     <div class="hero">
-      <h1 class="header-title">Immersive experiences that deliver</h1
-    ></div>
+      <h1 class="hero-title">Immersive experiences that deliver</h1>
+      <button class="hero-btn"><a href="#">View Our Products</a></button>
+    </div>
   </header>
 <!-- HOME ABOUT SECTION -->
   <section class="home-about">
@@ -154,7 +172,6 @@
       Coded by <a href="#">Angel Rodriguez</a>.
     </div>
   </footer>
-  
   <script src="index.js"></script>
 
 </body>
