@@ -315,231 +315,440 @@ footer {
 
 /* ------- MEDIA QUERIES ------ */
 
-    /* ------- PHONE ------ */
-@media screen and (max-width: 400px){
-    header {
-        background-image: url(images/mobile/image-hero.jpg);
-        padding: 5px;
-        position: relative;
+    /* ------- PHONE PORTRAIT ------ */
+    @media screen and (max-width: 414px) and (orientation: portrait)
+    {
+        header {
+            background-image: url(images/mobile/image-hero.jpg);
+            padding: 5px;
+            position: relative;
+        }
+        .navbar {
+            display: none;
+        }
+        .navbar-mobile {
+            display: block;
+        }
+        .nav-logo img{
+            height: 25px;
+        }
+        .hero {
+            position: absolute;
+            top: 25%;
+            left: 30px;
+        }
+        .hero-title {
+            top: 50%;
+            left: 50px;
+            font-size: 3.4rem;
+            color: #fff;
+            width: 50%;
+            text-transform: uppercase;
+            line-height: 55px;
+            letter-spacing: 5px;
+        }
+        .hero-btn {
+            border: 1.5px solid #fff;
+            background-color: transparent;
+            width: 185px;
+            height: 50px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .hero-btn a{
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    
+        /*----- HOME ABOUT SECTION -----*/
+    
+        .home-about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            padding: 90px 10px 10px 10px;
+        }
+        .home-about img{
+            content: url("images/mobile/image-interactive.jpg");
+            width: 88vw;
+        }
+        .home-about-title-caption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 10px;
+            margin-top: 10px;
+            width: 85vw;
+        }
+        .home-about-title-caption h3{
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 0;
+    
+        }
+        .home-about-title-caption p{
+            text-align: center;
+            line-height: 25px;
+            padding-top: 10px;
+            width: 75vw;
+            color: hsl(0, 0%, 55%);
+        }
+    
+        /* ----- OUR CREATIONS SECTION ----- */
+    
+        .our-creations {
+            display: grid;
+            padding: 0px 10px; 
+            margin-bottom: 50px;
+        }
+        .oc-title-button {
+            display: block;
+        }
+        .oc-title-button h3 {
+            font-size: 3.2rem;
+            text-align: center;
+            margin: -15px;
+        }
+        .oc-title-button button {
+            display: none;
+        }
+        .oc-container {
+            padding-bottom: 10px;
+        }
+        .oc-container h4 {
+            font-size: 2.4rem;
+            width: 40%;
+        }
+        .oc-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .deep-earth{
+            display: none;
+        }
+        .deep-earth-mobile {
+            display: block;
+            width: 330px;
+        }
+        .night-arcade{
+            display: none;
+        }
+        .night-arcade-mobile {
+            display: block;
+            width: 330px;
+        }
+        .soccer-team{
+            display: none;
+        }
+        .soccer-team-mobile {
+            display: block;
+            width: 330px;
+        }
+        .the-grid{
+            display: none;
+        }
+        .the-grid-mobile {
+            display: block;
+            width: 330px;
+        }
+        .from-above{
+            display: none;
+        }
+        .from-above-mobile {
+            display: block;
+            width: 330px;
+        }
+        .pocket-borealis{
+            display: none;
+        }
+        .pocket-borealis-mobile {
+            display: block;
+            width: 330px;
+        }
+        .the-curiosity{
+            display: none;
+        }
+        .the-curiosity-mobile {
+            display: block;
+            width: 330px;
+        }
+        .fisheye{
+            display: none;
+        }
+        .fisheye-mobile {
+            display: block;
+            width: 330px;
+        }
+        .oc-container h4 {
+            position: absolute;
+            bottom: 1px;
+        }
+        .oc-phone-button {
+            margin-top: 20px;
+            display: block;
+            width: 185px;
+            height: 50px;
+            background-color: #fff;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .oc-phone-button a {
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 3px;
+            color: #000;
+        }
+    
+        /* ----- FOOTER ----- */
+    
+        footer {
+            display: none;
+        }
+        .mobile-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            padding: 20px 15px;
+        }
+        .logo-sm-icons {
+            display: block;
+        }
+        .sm-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer-menu li{
+            display: block;
+            padding: 5px 0;
+        }
+        .footer-menu{
+            text-align: center;
+            padding: 0 5px;
+        }
+        .arr {
+            color: hsl(0, 0%, 55%);
+        }
+        .attribution {
+            display: none;
+        }
     }
-    .navbar {
-        display: none;
-    }
-    .navbar-mobile {
-        display: block;
-    }
-    .nav-logo img{
-        height: 25px;
-    }
-    .hero {
-        position: absolute;
-        top: 25%;
-        left: 30px;
-    }
-    .hero-title {
-        top: 50%;
-        left: 50px;
-        font-size: 3.4rem;
-        color: #fff;
-        width: 50%;
-        text-transform: uppercase;
-        line-height: 55px;
-        letter-spacing: 5px;
-    }
-    .hero-btn {
-        border: 1.5px solid #fff;
-        background-color: transparent;
-        width: 185px;
-        height: 50px;
-        cursor: pointer;
-        margin-top: 10px;
-    }
-    .hero-btn a{
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-    }
+    /* ------- PHONE LANDSCAPE ------ */
+    @media screen and (min-device-width: 480px) and (max-device-width: 815px) and (orientation: landscape)
+    {
+        header {
+            background-image: url(images/mobile/image-hero.jpg);
+            padding: 5px;
+            position: relative;
+        }
+        .navbar {
+            display: none;
+        }
+        .navbar-mobile {
+            display: block;
+        }
+        .nav-logo img{
+            height: 25px;
+        }
+        .hero {
+            position: absolute;
+            top: 20%;
+            left: 30px;
+        }
+        .hero-title {
+            top: 10%;
+            left: 50px;
+            font-size: 3.4rem;
+            color: #fff;
+            width: 50%;
+            text-transform: uppercase;
+            line-height: 55px;
+            letter-spacing: 5px;
+        }
+        .hero-btn {
+            border: 1.5px solid #fff;
+            background-color: transparent;
+            width: 185px;
+            height: 50px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .hero-btn a{
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        /* ------- HOME ABOUT ------ */
+        .home-about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            margin-top: 110px;
+            padding: 10px
+        }
+        .home-about img{
+            width: 80vw;
+        }
+        .home-about-title-caption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0 0 0;
+            padding: 10px;
+            width: 85vw;
+        }
+        .home-about-title-caption h3{
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 0;
 
-    /*----- HOME ABOUT SECTION -----*/
+        }
+        .home-about-title-caption p{
+            text-align: center;
+            line-height: 25px;
+            width: 75vw;
+            color: hsl(0, 0%, 55%);
+        }
 
-    .home-about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-        padding: 90px 10px 10px 10px;
-    }
-    .home-about img{
-        content: url("images/mobile/image-interactive.jpg");
-        width: 88vw;
-    }
-    .home-about-title-caption {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 10px;
-        margin-top: 10px;
-        width: 85vw;
-    }
-    .home-about-title-caption h3{
-        font-size: 3rem;
-        text-align: center;
-        margin-bottom: 0;
-
-    }
-    .home-about-title-caption p{
-        text-align: center;
-        line-height: 25px;
-        padding-top: 10px;
-        width: 75vw;
-        color: hsl(0, 0%, 55%);
-    }
-
-    /* ----- OUR CREATIONS SECTION ----- */
-
-    .our-creations {
-        display: grid;
-        padding: 0px 10px; 
-        margin-bottom: 50px;
-    }
-    .oc-title-button {
-        display: block;
-    }
-    .oc-title-button h3 {
-        font-size: 3.2rem;
-        text-align: center;
-        margin: -15px;
-    }
-    .oc-title-button button {
-        display: none;
-    }
-    .oc-container {
-        padding-bottom: 10px;
-    }
-    .oc-container h4 {
-        font-size: 2.4rem;
-        width: 40%;
-    }
-    .oc-gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .deep-earth{
-        display: none;
-    }
-    .deep-earth-mobile {
-        display: block;
-        width: 330px;
-    }
-    .night-arcade{
-        display: none;
-    }
-    .night-arcade-mobile {
-        display: block;
-        width: 330px;
-    }
-    .soccer-team{
-        display: none;
-    }
-    .soccer-team-mobile {
-        display: block;
-        width: 330px;
-    }
-    .the-grid{
-        display: none;
-    }
-    .the-grid-mobile {
-        display: block;
-        width: 330px;
-    }
-    .from-above{
-        display: none;
-    }
-    .from-above-mobile {
-        display: block;
-        width: 330px;
-    }
-    .pocket-borealis{
-        display: none;
-    }
-    .pocket-borealis-mobile {
-        display: block;
-        width: 330px;
-    }
-    .the-curiosity{
-        display: none;
-    }
-    .the-curiosity-mobile {
-        display: block;
-        width: 330px;
-    }
-    .fisheye{
-        display: none;
-    }
-    .fisheye-mobile {
-        display: block;
-        width: 330px;
-    }
-    .oc-container h4 {
-        position: absolute;
-        bottom: 1px;
-    }
-    .oc-phone-button {
-        margin-top: 20px;
-        display: block;
-        width: 185px;
-        height: 50px;
-        background-color: #fff;
-        border: 1px solid #000;
-        cursor: pointer;
-    }
-    .oc-phone-button a {
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 3px;
-        color: #000;
-    }
-
-    /* ----- FOOTER ----- */
-
-    footer {
-        display: none;
-    }
-    .mobile-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 65vh;
-        padding: 20px 15px;
-    }
-    .logo-sm-icons {
-        display: block;
-    }
-    .sm-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer-menu li{
-        display: block;
-        padding: 5px 0;
-    }
-    .footer-menu{
-        text-align: center;
-        padding: 0 5px;
-    }
-    .arr {
-        color: hsl(0, 0%, 55%);
-    }
-    .attribution {
-        display: none;
-    }
+        /* ----- OUR CREATIONS SECTION ----- */
+        
+        .our-creations{
+            padding: 0 60px 60px 60px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .oc-title-button {
+            width: 80vw;
+            padding: 60px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .oc-title-button h3{
+            font-family: 'Josefin Sans', sans-serif;
+            display: flex;
+            text-align: center;
+            font-weight: 300;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+        .oc-title-button button{
+            width: 185px;
+            height: 50px;
+            background-color: #fff;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .oc-gallery {
+            display: grid;
+            grid-template-columns: 1fr ;
+        }
+        .deep-earth{
+            display: none;
+        }
+        .deep-earth-mobile {
+            display: block;
+            width: 400px;
+        }
+        .night-arcade{
+            display: none;
+        }
+        .night-arcade-mobile {
+            display: block;
+            width: 400px;
+        }
+        .soccer-team{
+            display: none;
+        }
+        .soccer-team-mobile {
+            display: block;
+            width: 400px;
+        }
+        .the-grid{
+            display: none;
+        }
+        .the-grid-mobile {
+            display: block;
+            width: 400px;
+        }
+        .from-above{
+            display: none;
+        }
+        .from-above-mobile {
+            display: block;
+            width: 400px;
+        }
+        .pocket-borealis{
+            display: none;
+        }
+        .pocket-borealis-mobile {
+            display: block;
+            width: 400px;
+        }
+        .the-curiosity{
+            display: none;
+        }
+        .the-curiosity-mobile {
+            display: block;
+            width: 400px;
+        }
+        .fisheye{
+            display: none;
+        }
+        .fisheye-mobile {
+            display: block;
+            width: 400px;
+        }
+        .oc-phone-button {
+            display: none;
+        }
+        /* ------- FOOTER ------ */
+        footer {
+            display: none;
+        }
+        .mobile-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px 15px;
+        }
+        .logo-sm-icons {
+            display: block;
+        }
+        .sm-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer-menu li{
+            display: block;
+            padding: 5px 0;
+        }
+        .footer-menu{
+            text-align: center;
+            padding: 0 5px;
+        }
+        .arr {
+            color: hsl(0, 0%, 55%);
+        }
+        .attribution {
+            display: none;
+        }
 }
-
+        
+    
     /* ------- iPad/Tablet Portrait------ */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -755,9 +964,9 @@ footer {
     }
 }
 
-    /* ------- iPad/Tablet Portrait------ */
+    /* ------- iPad/Tablet Landscape ------ */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 820px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     header{
         padding: 10px 60px;
     }
@@ -916,8 +1125,8 @@ footer {
         display: none;
     }
 }
-
-@media screen and (max-width: 770px) {
+/* ------- MOBILE MENU ------ */
+@media screen and (max-width: 880px) {
     .hamburger {
         display: flex;
         border: none;
@@ -935,6 +1144,7 @@ footer {
     }
     .nav-ul-mobile {
         display: block;
+        margin-right: 25px;
     }
     .main-nav-mobile {
         margin: 0;
