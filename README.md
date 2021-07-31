@@ -1,4 +1,4 @@
-#Welcome!
+##Welcome! 👨🏼‍💻
 
 This is a challenge found in Frontendmentor.io
 
@@ -13,11 +13,12 @@ I started working on the desktop first, I used the design images provided on the
 The desktop part of it was easy since I already have practice with it, but where I started to feel more challenged was making the site responsive.
 First I started optimizing the page for phones, this took me a bit of time since it was my first time doing it, but I started getting the hang of it little by little and when I was done with that, everything else was a little bit easier. I started optimizing for the iPad/tablet on portrait mode, then for landscape mode, and then I remembered I had forgotten the landscape mode for phones. Then I started working on the mobile menu to make it work in all smaller screens.
 
-##Preview
+##Preview 🖥💻
 
 If you want to see the preview of my finished site, click here: https://angel2424.github.io/LoopStudiosWebsite/
 
-## Thank you for taking some time to see my practice Landing page!
+## Thank you for taking some time to see my practice Landing page! 🙌🏼
 
 If you want to see more of my work and me, follow me in my Instagram and Twitter!
-https://www.instagram.com/a.rdz24/	https://twitter.com/angelrdz2424
+https://www.instagram.com/a.rdz24/	
+https://twitter.com/angelrdz2424
